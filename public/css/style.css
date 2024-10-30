@@ -1,0 +1,188 @@
+#evince_qview_popup ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+#evince_qview_popup ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+}
+
+/* Handle */
+#evince_qview_popup ::-webkit-scrollbar-thumb {
+    background: #b5b5b5; 
+    width: 10px;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+#evince_qview_popup ::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+    width: 10px;
+}
+.evince_qview_popup_class {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+}
+.evince_qview_popup_body {
+    overflow: hidden; 
+    position: relative;
+}
+.evince_qview_popup_body:after {
+    position: absolute;
+    content: "";
+    width: 100%; height: 100%; left: 0; top: 0;
+}
+img.evince_loader{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 999999999;
+}
+.evince_ocqkvwbtn {
+    width: auto !important;
+    padding: 0 20px;
+    height: 40px;
+    margin: 5px 0px;
+}
+.evince_qview_close:hover, .evince_qview_close:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+.evince_qview_close {
+    font-size: 23px;
+    font-weight: bold;
+    position: absolute;
+    right: -20px;
+    top: -25px;
+    height: 25px;
+    width: 25px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    z-index: 9999999;
+}
+.evince_qview_modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 5px; 
+    padding: 15px;
+    position: relative;
+}
+.evince_qview_image {
+    display: inline-block;
+    float: left;
+    width: 40%;
+}
+.evince_qview_summaary {
+    display: inline-block;
+    float: right;
+    width: 55%;
+}
+.evince_qview_summaary .product_title.entry-title {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.evince_qview_summaary .qty {
+    width: 23%;
+    margin-bottom: 10px;
+}
+.evince_qview_summaary .product_meta {
+    font-size: 14px;
+    margin-top:10px;
+}
+.evince_qview_summaary .product_meta > span {
+    width: 100%;
+    display: block;
+    margin: 3px 0;
+}
+.evince_qview_inner_div {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    max-width: 1100px;
+    max-height: 636px;
+    overflow: auto;
+}
+.evince_qview_image div.images {
+    width: 100%;
+    float: none;
+    margin: auto;
+}
+.evince_qview_image div.thumbnails a {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-right: 1%;
+    margin-left: 2%;
+    margin-bottom: 1em;
+}
+.evince_qview_image div.images .thumbnails.columns-3 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.evince_qview_summaary.evince_summaary_full {
+    width: 100%;
+}
+.evince_qview_btn_div button.evince_ocqkvwbtn img {
+    width: 19px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 2px;
+}
+.evince_vdbtn {
+    margin-top: 10px;
+}
+.evince_qview_btn_div.show_only_in_mobile{
+    display:none;
+}
+
+@media screen and (max-width: 767px) {
+    .evince_qview_modal-content {
+        width: 85%;
+    }
+    select#pa_size {
+        width: 87%;
+    }
+    .evince_qview_close {
+        font-size: 23px;
+        font-weight: bold;
+        position: absolute;
+        height: 25px;
+        line-height: 20px;
+        width: 25px;
+        vertical-align: middle;
+        text-align: center;
+        z-index: 9999999;
+        border-radius: 50%;
+        font-family: arial;
+    }
+    .evince_qview_image {
+        width: 100%;
+        float: left;
+        display: inline-block;
+    }
+    .evince_qview_summaary {
+        width: 100%;
+        display: inline-block;
+    }
+    .qevince_qview_summaary .qty {
+        width: 23%;
+        margin-bottom: 10px;
+    }
+    .evince_qview_btn_div.show_only_in_mobile{
+        display:block;
+    }
+}

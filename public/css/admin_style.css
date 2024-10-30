@@ -1,0 +1,98 @@
+.evince-container ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+.evince-container ul.tabs li{
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    background: #e5e5e5;
+    margin-bottom: -1px;
+}
+.evince-container .tab-content{
+    display: none;
+    padding: 15px 0px;
+}
+.evince-container .tab-content.current{
+    display: inherit;
+}
+.evince-container {
+    margin-top: 20px;
+    max-width: 90%;
+}
+.evince-container h2 {
+    margin: 0px 0px;
+    padding: 10px 10px;
+    background-color: #576979;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cover_div {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.evince-container ul.tabs li.current{
+    border-bottom: 1px solid #f1f1f1;
+    background: #f1f1f1;
+}
+table.evince_data_table {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.evince_data_table tr th, .evince_data_table tr td{
+    text-align: left;
+    width: auto;
+}
+.evince_data_table tr{
+    line-height: 51px;
+}
+.evince_data_table tr th{
+    min-width: 250px;
+}
+.evince_data_table select,.evince_data_table input[type="number"]{
+    width: 49%;
+}
+.evince_data_table strong {
+    vertical-align: middle;
+}
+.evince_cover_div tr {
+    line-height: 51px;
+}
+.evince_data_table input[type="color"]{
+	width:52%;
+}
+img.OCWQV_rating_div {
+    width: 105px;
+    vertical-align: middle;
+}
+.evince_show_td label {
+	padding-right: 20px;
+}
+.evince_icon_choice label {
+	padding-right: 20px;
+}
+.evince_icon_choice img {
+	width: 25px;
+    vertical-align: sub;
+}
+.evince_icon_choice i {
+    font-size: 24px;
+    color: #000000;
+}
+.evince_cover_div .evincescode {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+}
+.evince_cover_div .evincescode p {
+    font-size: 16px;
+}
